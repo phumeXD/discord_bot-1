@@ -25,8 +25,8 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    channel = bot.get_channel(1140633489520205934) # IDห้อง
-    text = f"Welcome to the server, {member.mention}!"
+    channel = bot.get_channel(1379026222146654259) # IDห้อง
+    text = f"Welcome to ta server, {member.mention}!"
 
     emmbed = discord.Embed(title = 'Welcome to the server!',
                            description = text,
@@ -39,8 +39,8 @@ async def on_member_join(member):
 
 @bot.event
 async def on_member_remove(member):
-    channel = bot.get_channel(1140633489520205934)  # IDห้อง
-    text = f"{member.name} has left the server!"
+    channel = bot.get_channel(1379026222146654259)  # IDห้อง
+    text = f"{member.name} has gone from the server!"
     await channel.send(text)  # ส่งข้อความไปที่ห้องนี้
 
 
